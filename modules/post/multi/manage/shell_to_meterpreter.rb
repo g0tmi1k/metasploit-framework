@@ -24,7 +24,10 @@ class MetasploitModule < Msf::Post
           and Linux, with 'python/meterpreter/reverse_tcp' used on all others.
         },
         'License' => MSF_LICENSE,
-        'Author' => ['Tom Sellers <tom [at] fadedcode.net>'],
+        'Author' => [
+          'Tom Sellers <tom [at] fadedcode.net>',
+          'g0tmi1k'   # @g0tmi1k // https://blog.g0tmi1k.com/ - additional features
+        ],
         'Platform' => [ 'linux', 'osx', 'unix', 'solaris', 'bsd', 'windows' ],
         'SessionTypes' => [ 'shell', 'meterpreter' ],
         'Notes' => {

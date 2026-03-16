@@ -26,9 +26,21 @@ class MetasploitModule < Msf::Auxiliary
   end
 
   def run
-    @dhcp = Rex::Proto::DHCP::Server.new(datastore)
-
     print_status("Starting DHCP server...")
+    @dhcp = Rex::Proto::DHCP::Server.new(datastore)
+    @dhcp.report do |event|
+      case event[:type]
+      when :dhcp_discover
+        vprint_status("DHCPDISCOVER from #{event[:mac]}")
+      when :dhcp_request
+        vprint_good("DHCPREQUEST #{event[:mac]} -> #{event[:ip]}")
+        report_host(
+          :host => event[:ip],
+          :mac => event[:mac],
+          :comments => 'Added from DHCP: auxiliary/server/dhcp'
+        )
+      end
+    end
     @dhcp.start
     add_socket(@dhcp.sock)
 

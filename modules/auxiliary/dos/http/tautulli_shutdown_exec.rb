@@ -8,7 +8,7 @@ class MetasploitModule < Msf::Auxiliary
 
   def initialize
     super(
-      'Name' => 'Tautulli v2.1.9 - Shutdown Denial of Service',
+      'Name' => 'Tautulli 2.1.9 Shutdown Denial of Service',
       'Description' => 'Tautulli versions 2.1.9 and prior are vulnerable to denial of service via the /shutdown URL.',
       'Author' => 'Ismail Tasdelen',
       'License' => MSF_LICENSE,

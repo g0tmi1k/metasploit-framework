@@ -13,7 +13,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => 'Sante PACS Server Path Traversal (CVE-2025-2264)',
+        'Name' => 'Sante PACS Server Path Traversal',
         'Description' => %q{
           This module exploits a path traversal vulnerability (CVE-2025-2264) in Sante PACS Server <= v4.1.0 to retrieve arbitrary files from the system.
         },

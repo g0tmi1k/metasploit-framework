@@ -7,7 +7,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => 'WhatsUp Gold SQL Injection (CVE-2024-6670)',
+        'Name' => 'WhatsUp Gold SQL Injection',
         'Description' => %q{
           This module exploits a SQL injection vulnerability in WhatsUp Gold, by changing the password of an existing user (such as of the default admin account)
           to an attacker-controlled one.

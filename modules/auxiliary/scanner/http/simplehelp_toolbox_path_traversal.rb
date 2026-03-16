@@ -15,7 +15,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => 'SimpleHelp Path Traversal Vulnerability CVE-2024-57727',
+        'Name' => 'SimpleHelp Path Traversal Vulnerability',
         'Description' => %q{
           There exists a path traversal vulnerability in the /toolbox-resource endpoint that enables unauthenticated
           remote attackers to download arbitrary files from the SimpleHelp server via crafted HTTP requests

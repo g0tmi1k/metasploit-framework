@@ -14,7 +14,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => 'CVE-2023-21554 - QueueJumper - MSMQ RCE Check',
+        'Name' => 'MSMQ RCE Check (QueueJumper)',
         'Description' => %q{
           This module checks the provided hosts for the CVE-2023-21554 vulnerability by sending
           a MSMQ message with an altered DataLength field within the SRMPEnvelopeHeader that

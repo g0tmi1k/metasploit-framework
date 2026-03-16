@@ -12,7 +12,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => 'ThinManager Path Traversal (CVE-2023-2915) Arbitrary File Delete',
+        'Name' => 'ThinManager Path Traversal Arbitrary File Delete',
         'Description' => %q{
           This module exploits a path traversal vulnerability (CVE-2023-2915) in
           ThinManager <= v13.1.0 to delete arbitrary files from the system.

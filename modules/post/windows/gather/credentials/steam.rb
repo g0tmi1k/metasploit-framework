@@ -11,7 +11,7 @@ class MetasploitModule < Msf::Post
     super(
       update_info(
         info,
-        'Name' => 'Windows Gather Steam Client Session Collector.',
+        'Name' => 'Windows Gather Steam Client Session Collector',
         'Description' => %q{
           This module will collect Steam session information from an
           account set to autologin.

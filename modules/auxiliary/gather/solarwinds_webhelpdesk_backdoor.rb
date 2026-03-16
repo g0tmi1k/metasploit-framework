@@ -8,7 +8,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => 'SolarWinds Web Help Desk Backdoor (CVE-2024-28987)',
+        'Name' => 'SolarWinds Web Help Desk Backdoor',
         'Description' => %q{
           This module exploits a backdoor in SolarWinds Web Help Desk <= v12.8.3 to retrieve all tickets from the system.
         },

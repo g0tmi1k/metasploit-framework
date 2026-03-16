@@ -12,7 +12,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => 'ThinManager Path Traversal (CVE-2023-27855) Arbitrary File Upload',
+        'Name' => 'ThinManager Path Traversal Arbitrary File Upload',
         'Description' => %q{
           This module exploits a path traversal vulnerability (CVE-2023-27855) in
           ThinManager <= v13.0.1 to upload arbitrary files to the target system.

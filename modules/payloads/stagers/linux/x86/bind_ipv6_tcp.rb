@@ -17,7 +17,7 @@ module MetasploitModule
     super(
       merge_info(
         info,
-        'Name' => 'Bind IPv6 TCP Stager (Linux x86)',
+        'Name' => 'Linux x86 Bind IPv6 TCP Stager',
         'Description' => 'Listen for an IPv6 connection (Linux x86)',
         'Author' => [ 'kris katterjohn', 'egypt' ],
         'License' => MSF_LICENSE,

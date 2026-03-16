@@ -7,7 +7,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => 'Fortra FileCatalyst Workflow SQL Injection (CVE-2024-5276)',
+        'Name' => 'Fortra FileCatalyst Workflow SQL Injection',
         'Description' => %q{
           This module exploits a SQL injection vulnerability in Fortra FileCatalyst Workflow <= v5.1.6 Build 135, by adding a new
           administrative user to the web interface of the application.

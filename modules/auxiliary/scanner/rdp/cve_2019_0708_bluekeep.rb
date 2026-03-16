@@ -12,7 +12,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => 'CVE-2019-0708 BlueKeep Microsoft Remote Desktop RCE Check',
+        'Name' => 'BlueKeep Microsoft Remote Desktop RCE Check',
         'Description' => %q{
           This module checks a range of hosts for the CVE-2019-0708 vulnerability
           by binding the MS_T120 channel outside of its normal slot and sending

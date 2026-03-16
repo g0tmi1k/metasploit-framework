@@ -14,7 +14,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => 'WordPress Depicter Plugin SQL Injection (CVE-2025-2011)',
+        'Name' => 'WordPress Depicter Plugin SQL Injection',
         'Description' => %q{
           The Slider & Popup Builder by Depicter plugin for WordPress <= 3.6.1
           is vulnerable to unauthenticated SQL injection via the 's' parameter

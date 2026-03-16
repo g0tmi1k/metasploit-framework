@@ -12,7 +12,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => 'WordPress TI WooCommerce Wishlist SQL Injection (CVE-2024-43917)',
+        'Name' => 'WordPress TI WooCommerce Wishlist SQL Injection',
         'Description' => %q{
           The TI WooCommerce Wishlist plugin <= 2.8.2 is vulnerable to an unauthenticated SQL injection, allowing attackers to retrieve sensitive information.
         },

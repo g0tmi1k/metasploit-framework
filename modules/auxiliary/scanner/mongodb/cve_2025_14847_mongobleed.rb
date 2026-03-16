@@ -12,7 +12,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => 'MongoDB Memory Disclosure (CVE-2025-14847) - Mongobleed',
+        'Name' => 'MongoDB Memory Disclosure (Mongobleed)',
         'Description' => %q{
           This module exploits a memory disclosure vulnerability in MongoDB's zlib
           decompression handling (CVE-2025-14847). By sending crafted OP_COMPRESSED

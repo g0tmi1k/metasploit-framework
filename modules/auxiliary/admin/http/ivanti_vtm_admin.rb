@@ -6,7 +6,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => 'Ivanti Virtual Traffic Manager Authentication Bypass (CVE-2024-7593)',
+        'Name' => 'Ivanti Virtual Traffic Manager Authentication Bypass',
         'Description' => %q{
           This module exploits an access control issue in Ivanti Virtual Traffic Manager (vTM), by adding a new
           administrative user to the web interface of the application.

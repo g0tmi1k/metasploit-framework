@@ -11,7 +11,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => "Allegro Software RomPager 'Misfortune Cookie' (CVE-2014-9222) Authentication Bypass",
+        'Name' => "Allegro Software RomPager 'Misfortune Cookie' Authentication Bypass",
         'Description' => %q{
           This module exploits HTTP servers that appear to be vulnerable to the
           'Misfortune Cookie' vulnerability which affects Allegro Software

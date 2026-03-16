@@ -12,7 +12,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => 'WordPress LearnPress Unauthenticated SQLi (CVE-2024-8522, CVE-2024-8529)',
+        'Name' => 'WordPress LearnPress Unauthenticated SQLi',
         'Description' => %q{
           The LearnPress WordPress LMS Plugin up to version 4.2.7 is vulnerable to SQL injection via
           the 'c_only_fields' and 'c_fields' parameters. This allows unauthenticated attackers to exploit blind SQL injections

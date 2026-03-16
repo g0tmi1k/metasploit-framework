@@ -17,7 +17,7 @@ module MetasploitModule
     super(
       merge_info(
         info,
-        'Name' => 'Windows x64 IPv6 Bind TCP Stager',
+        'Name' => 'Windows x64 Bind IPv6 TCP Stager',
         'Description' => 'Listen for an IPv6 connection (Windows x64)',
         'Author' => [ 'sf' ],
         'License' => MSF_LICENSE,

@@ -11,7 +11,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => 'Microweber CMS v1.2.10 Local File Inclusion (Authenticated)',
+        'Name' => 'Microweber CMS 1.2.10 Local File Inclusion (Authenticated)',
         'Description' => %q{
           Microweber CMS v1.2.10 has a backup functionality. Upload and download endpoints can be combined to read any file from the filesystem.
           Upload function may delete the local file if the web service user has access.

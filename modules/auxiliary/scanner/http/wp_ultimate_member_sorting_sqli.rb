@@ -12,7 +12,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => 'WordPress Ultimate Member SQL Injection (CVE-2024-1071)',
+        'Name' => 'WordPress Ultimate Member SQL Injection',
         'Description' => %q{
           The Ultimate Member plugin for WordPress up to version 2.8.2 is vulnerable to SQL injection via
           the 'sorting' parameter. This allows unauthenticated attackers to exploit blind SQL injections and

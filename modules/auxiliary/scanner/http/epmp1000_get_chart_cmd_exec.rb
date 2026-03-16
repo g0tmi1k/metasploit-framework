@@ -10,7 +10,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => "Cambium ePMP 1000 'get_chart' Command Injection (v3.1-3.5-RC7)",
+        'Name' => "Cambium ePMP 1000 v3.1-3.5-RC7 'get_chart' Command Injection",
         'Description' => %q{
           This module exploits an OS Command Injection vulnerability in Cambium
           ePMP 1000 (v3.1-3.5-RC7) device management portal. It requires any one of the

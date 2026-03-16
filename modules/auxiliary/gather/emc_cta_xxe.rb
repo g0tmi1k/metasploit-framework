@@ -10,7 +10,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => 'EMC CTA v10.0 Unauthenticated XXE Arbitrary File Read',
+        'Name' => 'EMC CTA 10.0 Unauthenticated XXE Arbitrary File Read',
         'Description' => %q{
           EMC CTA v10.0 is susceptible to an unauthenticated XXE attack
           that allows an attacker to read arbitrary files from the file system

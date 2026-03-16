@@ -11,7 +11,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => 'CVE-2024-20767 - Adobe Coldfusion Arbitrary File Read',
+        'Name' => 'Adobe Coldfusion Arbitrary File Read',
         'Description' => %q{
           This module exploits an Improper Access Vulnerability in Adobe Coldfusion versions prior to version
           '2023 Update 6' and '2021 Update 12'. The vulnerability allows unauthenticated attackers to request authentication

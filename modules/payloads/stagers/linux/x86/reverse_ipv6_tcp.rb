@@ -18,7 +18,7 @@ module MetasploitModule
     super(
       merge_info(
         info,
-        'Name' => 'Reverse TCP Stager (IPv6)',
+        'Name' => 'Linux Reverse IPv6 TCP Stager',
         'Description' => 'Connect back to attacker over IPv6',
         'Author' => 'kris katterjohn',
         'License' => MSF_LICENSE,

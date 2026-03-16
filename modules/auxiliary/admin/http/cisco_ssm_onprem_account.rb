@@ -10,7 +10,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => 'Cisco Smart Software Manager (SSM) On-Prem Account Takeover (CVE-2024-20419)',
+        'Name' => 'Cisco Smart Software Manager (SSM) On-Prem Account Takeover',
         'Description' => %q{
           This module exploits an improper access control vulnerability in Cisco Smart Software Manager (SSM) On-Prem <= 8-202206. An unauthenticated remote attacker
           can change the password of any existing user, including administrative users.

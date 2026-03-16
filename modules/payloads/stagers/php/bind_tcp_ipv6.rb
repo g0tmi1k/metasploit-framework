@@ -17,7 +17,7 @@ module MetasploitModule
     super(
       merge_info(
         info,
-        'Name' => 'Bind TCP Stager IPv6',
+        'Name' => 'PHP Bind IPv6 TCP Stager',
         'Description' => 'Listen for a connection over IPv6',
         'Author' => ['egypt'],
         'License' => MSF_LICENSE,

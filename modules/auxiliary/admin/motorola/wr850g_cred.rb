@@ -10,7 +10,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => 'Motorola WR850G v4.03 Credentials',
+        'Name' => 'Motorola WR850G 4.03 Credentials',
         'Description' => %q{
           Login credentials to the Motorola WR850G router with
           firmware v4.03 can be obtained via a simple GET request

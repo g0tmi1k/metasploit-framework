@@ -12,7 +12,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => 'WordPress WP Fastest Cache Unauthenticated SQLi (CVE-2023-6063)',
+        'Name' => 'WordPress WP Fastest Cache Unauthenticated SQLi',
         'Description' => %q{
           WP Fastest Cache, a WordPress plugin,
           prior to version 1.2.2, is vulnerable to an unauthenticated SQL injection

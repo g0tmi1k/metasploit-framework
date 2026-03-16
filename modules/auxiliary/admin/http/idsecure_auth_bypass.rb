@@ -7,7 +7,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => 'Control iD iDSecure Authentication Bypass (CVE-2023-6329)',
+        'Name' => 'Control iD iDSecure Authentication Bypass',
         'Description' => %q{
           This module exploits an improper access control vulnerability (CVE-2023-6329) in Control iD iDSecure <= v4.7.43.0. It allows an
           unauthenticated remote attacker to compute valid credentials and to add a new administrative user to the web interface of the product.

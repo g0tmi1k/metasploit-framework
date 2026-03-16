@@ -13,7 +13,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => 'POWERCOM UPSMON PRO Path Traversal (CVE-2022-38120) and Credential Harvester (CVE-2022-38121)',
+        'Name' => 'POWERCOM UPSMON PRO Path Traversal and Credential Harvester',
         'Description' => %q{
           This module exploits a path traversal vulnerability in UPSMON PRO <= v2.61 to retrieve arbitrary files from the system.
           By default, the configuration file will be retrieved, which contains the credentials (CVE-2022-38121) for the web service, mail server, application, and SMS service.

@@ -10,7 +10,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => "Cambium ePMP 1000 'ping' Command Injection (up to v2.5)",
+        'Name' => "Cambium ePMP 1000 < 2.5 'ping' Command Injection",
         'Description' => %q{
           This module exploits an OS Command Injection vulnerability in Cambium
           ePMP 1000 (<v2.5) device management portal. It requires any one of the

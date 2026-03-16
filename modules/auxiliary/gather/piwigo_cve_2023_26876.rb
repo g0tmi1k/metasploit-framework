@@ -13,7 +13,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => 'Piwigo CVE-2023-26876 Gather Credentials via SQL Injection ',
+        'Name' => 'Piwigo Gather Credentials via SQL Injection',
         'Description' => %q{
           This module allows an authenticated user to retrieve the usernames and encrypted passwords of other users in Piwigo through SQL injection using the (filter_user_id) parameter.
         },

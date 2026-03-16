@@ -14,7 +14,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       update_info(
         info,
-        'Name' => 'WordPress Photo Gallery Plugin SQL Injection (CVE-2022-0169)',
+        'Name' => 'WordPress Photo Gallery Plugin SQL Injection',
         'Description' => %q{
           The Photo Gallery by 10Web WordPress plugin <= 1.6.0 is vulnerable to
           unauthenticated SQL injection via the 'bwg_tag_id_bwg_thumbnails_0[]'

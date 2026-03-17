@@ -46,7 +46,8 @@ class MetasploitModule < Msf::Auxiliary
 
     # Wait for finish..
     while @dhcp.thread.alive?
-      select(nil, nil, nil, 2)
+      sleep 2
+
     end
 
     print_status("Stopping DHCP server...")

@@ -68,7 +68,8 @@ class MetasploitModule < Msf::Auxiliary
         start_service(hash)
 
         while @dhcp.thread.alive?
-          select(nil, nil, nil, 2)
+          sleep 2
+
         end
       rescue Interrupt
         break

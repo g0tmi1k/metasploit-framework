@@ -51,7 +51,8 @@ class MetasploitModule < Msf::Auxiliary
     disconnect
 
     print_status('Checking for success...')
-    select(nil, nil, nil, 2)
+    sleep 2
+
     begin
       connect
     rescue ::Interrupt

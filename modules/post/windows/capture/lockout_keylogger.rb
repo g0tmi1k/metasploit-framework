@@ -128,7 +128,8 @@ class MetasploitModule < Msf::Post
         end
       end
 
-      select(nil, nil, nil, 2)
+      sleep 2
+
       file_local_write(logfile, "#{outp}\n")
       if !outp.nil? && (outp.chomp.lstrip != '')
         print_status("Password?: #{outp}")
@@ -229,7 +230,8 @@ class MetasploitModule < Msf::Post
           print_status('Session has been locked out')
         else
           # sleep(keytime.to_i) / hardsleep applied due to missing loging right after lockout.. no good way to solve this
-          select(nil, nil, nil, 2)
+          sleep 2
+
         end
       end
     else

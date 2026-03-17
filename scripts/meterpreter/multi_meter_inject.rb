@@ -142,7 +142,8 @@ if multi_ip
       multi_ip.each do |i|
         payload = create_payload(payload_type,i,lport)
         inject(start_proc,payload)
-        select(nil, nil, nil, 2)
+        sleep 2
+
       end
     end
   end

@@ -6,14 +6,14 @@ module Msf::Module::UI::Message
 
   def print_error(msg='', prefix: nil)
     msg_prefix = prefix.nil? ? print_prefix : prefix
-    super(msg_prefix + msg)
+    super(prefix_message(msg_prefix, msg))
   end
 
   alias_method :print_bad, :print_error
 
   def print_good(msg='', prefix: nil)
     msg_prefix = prefix.nil? ? print_prefix : prefix
-    super(msg_prefix + msg)
+    super(prefix_message(msg_prefix, msg))
   end
 
   def print_prefix
@@ -38,11 +38,31 @@ module Msf::Module::UI::Message
 
   def print_status(msg='', prefix: nil)
     msg_prefix = prefix.nil? ? print_prefix : prefix
-    super(msg_prefix + msg)
+    super(prefix_message(msg_prefix, msg))
   end
 
   def print_warning(msg='', prefix: nil)
     msg_prefix = prefix.nil? ? print_prefix : prefix
-    super(msg_prefix + msg)
+    super(prefix_message(msg_prefix, msg))
+  end
+
+  private
+
+  # Prepends msg_prefix to msg. If msg already opens with the same peer address
+  # that msg_prefix contains (e.g. injected by Msf::Exploit::Remote::Tcp), that
+  # leading "ip:port - " is replaced by msg_prefix so the address appears only once.
+  def prefix_message(msg_prefix, msg)
+    str = msg.to_s
+    # IPv4 address (e.g. 127.0.0.1:port)
+    if (m = msg_prefix.match(/(\d+\.\d+\.\d+\.\d+:\d+)/))
+      pat = /\A#{Regexp.escape(m[1])}\s*-\s*/
+    # IPv6 address (e.g. [::1]:port or ::1:port)
+    elsif (m = msg_prefix.match(/\[([\da-fA-F:]+)\]:(\d+)/))
+      pat = /\A(?:\[#{Regexp.escape(m[1])}\]|#{Regexp.escape(m[1])}):#{m[2]}\s*-\s*/
+    else
+      return msg_prefix + str
+    end
+
+    str.match?(pat) ? str.sub(pat) { msg_prefix } : msg_prefix + str
   end
 end

@@ -9,7 +9,7 @@ class MetasploitModule < Msf::Auxiliary
   include Msf::Auxiliary::AuthBrute
   include Msf::Auxiliary::Report
   include Msf::Module::Deprecated
-  moved_from 'auxiliary/scanner/oracle/isqlplus_sid_brute'
+  moved_from 'auxiliary/scanner/oracle/isqlplus_sidbrute'
 
   def initialize
     super(

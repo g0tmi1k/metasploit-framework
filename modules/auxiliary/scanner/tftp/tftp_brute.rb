@@ -7,7 +7,7 @@ class MetasploitModule < Msf::Auxiliary
   include Msf::Auxiliary::Scanner
   include Msf::Auxiliary::Report
   include Msf::Module::Deprecated
-  moved_from 'auxiliary/scanner/tftp/tftp_brute'
+  moved_from 'auxiliary/scanner/tftp/tftpbrute'
 
   def initialize
     super(
